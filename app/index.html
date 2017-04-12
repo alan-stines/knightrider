@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>KnightRider</title>
+	<meta name="description" content="Sharing rides w/ the MGA Community">
+	<meta name="viewport" content="width=device-width" />
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<link rel="stylesheet" href="bower_components/components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="styles/meyers.css" />
+	<link rel="stylesheet" href="styles/main.css" />
+	<!-- endbuild -->
+</head>
+<body ng-app="knightriderApp">
+<div class="wrapper">
+	<header>
+		<h1><a ng-href="#!/">KnightRider</a></h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a ng-href="#!/">Home</a></li>
+			<li><a ng-href="#!/rides">Rides</a></li>
+			<li><a ng-href="#!/about">About</a></li>
+			<li><a ng-href="#!/contact">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<div id="main">
+    <div ng-view=""></div>
+    </div><!-- END MAIN -->
+
+    <footer>
+      <h3>Thanks for Playing</h3>
+    </footer><!-- END FOOTER -->
+</div><!-- END WRAPPER -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers/main.js"></script>
+	<script src="scripts/controllers/about.js"></script>
+	<script src="scripts/controllers/rides.js"></script>
+	<script src="scripts/controllers/contact.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

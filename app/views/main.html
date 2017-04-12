@@ -1,0 +1,9 @@
+
+<div data-ng-repeat="i in users">
+	<h3>{{ i.lastName + ', ' + i.firstName + ' - ' + i.phone}}</h3>
+	<ul ng-if="i.trips.length > 0">
+		<li data-ng-repeat="j in i.trips">
+			{{ j.origin }} <i class="fa fa-arrow-right"></i> {{ j.destination }}
+		</li>
+	</ul>
+</div>
