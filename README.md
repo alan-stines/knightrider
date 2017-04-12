@@ -11,7 +11,7 @@ Needs some global packages installed to work.
 
 Once you install globals run `npm install && bower install` to download dependencies
 
-Run `grunt - force` for building and `grunt serve` for preview/livereload.
+Run `grunt -force` for building and `grunt serve` for preview/livereload.
 
 ## Testing
 
